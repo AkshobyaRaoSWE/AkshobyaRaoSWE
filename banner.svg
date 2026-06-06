@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 430" width="1280" height="430" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <defs>
+    <radialGradient id="b1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9ec6ff" stop-opacity="0.62"/>
+      <stop offset="70%" stop-color="#9ec6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#bff3df" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#bff3df" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffcfe6" stop-opacity="0.6"/>
+      <stop offset="70%" stop-color="#ffcfe6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b4" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e6d8ff" stop-opacity="0.62"/>
+      <stop offset="70%" stop-color="#e6d8ff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="34"/>
+    </filter>
+    <filter id="glass" x="-40%" y="-60%" width="180%" height="260%">
+      <feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#1c1e3c" flood-opacity="0.16"/>
+    </filter>
+    <clipPath id="round"><rect width="1280" height="430" rx="28"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <!-- light canvas -->
+    <rect width="1280" height="430" fill="#f4f5f7"/>
+
+    <!-- drifting pastel color field -->
+    <g filter="url(#soft)">
+      <circle cx="150" cy="70"  r="300" fill="url(#b1)"/>
+      <circle cx="1180" cy="60" r="300" fill="url(#b2)"/>
+      <circle cx="220" cy="430" r="300" fill="url(#b3)"/>
+      <circle cx="1120" cy="420" r="300" fill="url(#b4)"/>
+    </g>
+
+    <!-- glass nav pill -->
+    <g filter="url(#glass)">
+      <rect x="468" y="30" width="344" height="46" rx="23" fill="#ffffff" fill-opacity="0.6" stroke="#ffffff" stroke-opacity="0.85"/>
+    </g>
+    <circle cx="497" cy="53" r="5" fill="#0a6cff"/>
+    <text x="514" y="58" font-size="15" font-weight="600" fill="#1d1d1f">Akshobya Rao</text>
+    <text x="648" y="58" font-size="14" fill="#6e6e73">Work</text>
+    <rect x="706" y="40" width="86" height="26" rx="13" fill="#0a6cff"/>
+    <text x="749" y="57" font-size="13.5" font-weight="600" fill="#ffffff" text-anchor="middle">Contact</text>
+
+    <!-- eyebrow -->
+    <text x="640" y="172" font-size="17" fill="#6e6e73" text-anchor="middle">Naperville, Illinois  ·  Class of 2028  ·  Mechanical Engineering–bound</text>
+
+    <!-- headline (the portfolio's signature line) -->
+    <text x="640" y="248" font-size="58" font-weight="600" letter-spacing="-1.6" fill="#1d1d1f" text-anchor="middle">I build autonomous systems</text>
+    <text x="640" y="316" font-size="58" font-weight="600" letter-spacing="-1.6" text-anchor="middle"><tspan fill="#1d1d1f">and </tspan><tspan fill="#0a6cff">teach people</tspan><tspan fill="#1d1d1f"> how they work.</tspan></text>
+
+    <!-- name line -->
+    <text x="640" y="384" font-size="19" fill="#56565b" text-anchor="middle">Akshobya Rao  —  lead robotics programmer, VEX 2360C &#8220;Clockwork&#8221;</text>
+  </g>
+</svg>
