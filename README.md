@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-ff4326?style=for-the-badge&logo=vercel&logoColor=white&labelColor=0a0a0b)](https://akshobya.vercel.app)
+[![Projects](https://img.shields.io/badge/PROJECTS-ff4326?style=for-the-badge&logo=github&logoColor=white&labelColor=0a0a0b)](https://github.com/AkshobyaRaoSWE?tab=repositories)
 &nbsp;
 [![LinkedIn](https://img.shields.io/badge/LINKEDIN-0a0a0b?style=for-the-badge&logo=linkedin&logoColor=ff4326)](https://www.linkedin.com/in/akshobya-rao-a852a0361/)
 &nbsp;
@@ -59,7 +59,7 @@ The connective tissue, data pipelines, simulation, and the interfaces that make 
 
 ## &nbsp;`telemetry`
 
-<img src="stats.svg" alt="GitHub telemetry: 7 repositories, language signal" width="100%" />
+<img src="stats.svg" alt="GitHub telemetry: repository and language signal" width="100%" />
 
 <div align="center">
 
@@ -73,12 +73,13 @@ The connective tissue, data pipelines, simulation, and the interfaces that make 
 
 | | Project | What it is | |
 | :-- | :-- | :-- | :-- |
-| 🏎️ | **[Formula 1 Lab](https://akshobya.vercel.app)** | Telemetry viewer, a stewards' decision log, a fantasy lab, and a helmet gallery. | ![soon](https://img.shields.io/badge/building-ff4326?style=flat-square&labelColor=0a0a0b) |
+| 🏎️ | **[F1 Track Dominance](https://github.com/AkshobyaRaoSWE/f1-track-dominance)** | Overlay two drivers' qualifying laps and compute dominance across 80 mini-sectors from real telemetry. | ![code](https://img.shields.io/badge/code-0a0a0b?style=flat-square&color=1a1a1d) |
+| 🏁 | **[F1 Fantasy Lab](https://github.com/AkshobyaRaoSWE/f1-fantasy)** | A fantasy lineup optimizer that enumerates the best squads from real race data. | ![code](https://img.shields.io/badge/code-0a0a0b?style=flat-square&color=1a1a1d) |
+| 🤖 | **[Odometry Sim](https://github.com/AkshobyaRaoSWE/odometry-sim)** | Differential-drive odometry and pure pursuit with IMU sensor fusion. | ![code](https://img.shields.io/badge/code-0a0a0b?style=flat-square&color=1a1a1d) |
+| 🎭 | **[Roundtable Rumble](https://github.com/AkshobyaRaoSWE/roundtable-rumble)** | A comedy panel show you play: five AI characters argue, you bet on the winner. | ![code](https://img.shields.io/badge/code-0a0a0b?style=flat-square&color=1a1a1d) |
 | 🎓 | **[StudentTeachers](https://studentteachers.dev)** | A nonprofit I founded and shipped the whole site for. | ![live](https://img.shields.io/badge/live-ff4326?style=flat-square&labelColor=0a0a0b) |
 | 🎨 | **[Fifty Labs](https://fifty-labs.vercel.app)** | My design studio. Bold, performant sites. | ![live](https://img.shields.io/badge/live-ff4326?style=flat-square&labelColor=0a0a0b) |
-| 🤖 | **[VEX 2360C](https://github.com/AkshobyaRaoSWE/2360C)** | Autonomous robot code in C++: odometry, pure pursuit, PID. | ![code](https://img.shields.io/badge/code-0a0a0b?style=flat-square&color=1a1a1d) |
-| 🧼 | **[removebg](https://github.com/AkshobyaRaoSWE/removebg)** | A free, open-source background remover. | ![code](https://img.shields.io/badge/code-0a0a0b?style=flat-square&color=1a1a1d) |
-| 🔄 | **[file_converter](https://github.com/AkshobyaRaoSWE/file_converter)** | Convert files free, no ads. | ![code](https://img.shields.io/badge/code-0a0a0b?style=flat-square&color=1a1a1d) |
+| 🧰 | **[removebg](https://github.com/AkshobyaRaoSWE/removebg)** &middot; **[file_converter](https://github.com/AkshobyaRaoSWE/file_converter)** | Free, open-source web tools, no ads. | ![code](https://img.shields.io/badge/code-0a0a0b?style=flat-square&color=1a1a1d) |
 
 <img src="divider.svg" alt="" width="100%" />
 
