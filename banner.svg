@@ -1,74 +1,79 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 430" width="1280" height="430" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 460" width="1280" height="460" font-family="'Helvetica Neue',Helvetica,Arial,sans-serif">
   <defs>
-    <radialGradient id="b1" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#9ec6ff" stop-opacity="0.6"/><stop offset="70%" stop-color="#9ec6ff" stop-opacity="0"/></radialGradient>
-    <radialGradient id="b2" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#b7f0dd" stop-opacity="0.6"/><stop offset="70%" stop-color="#b7f0dd" stop-opacity="0"/></radialGradient>
-    <radialGradient id="b3" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ffd0c0" stop-opacity="0.6"/><stop offset="70%" stop-color="#ffd0c0" stop-opacity="0"/></radialGradient>
-    <radialGradient id="b4" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#e6d8ff" stop-opacity="0.6"/><stop offset="70%" stop-color="#e6d8ff" stop-opacity="0"/></radialGradient>
     <linearGradient id="sig" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#e10600" stop-opacity="0"/>
-      <stop offset="12%" stop-color="#e10600" stop-opacity="0.85"/>
-      <stop offset="50%" stop-color="#0a6cff" stop-opacity="0.85"/>
-      <stop offset="88%" stop-color="#10b981" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#ff4326" stop-opacity="0"/>
+      <stop offset="14%" stop-color="#ff4326" stop-opacity=".9"/>
+      <stop offset="60%" stop-color="#ff7a5c" stop-opacity=".9"/>
+      <stop offset="100%" stop-color="#ff4326" stop-opacity="0"/>
     </linearGradient>
-    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="36"/></filter>
-    <filter id="glass" x="-40%" y="-60%" width="180%" height="260%"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#1c1e3c" flood-opacity="0.16"/></filter>
-    <filter id="cardsh" x="-50%" y="-80%" width="200%" height="300%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#e10600" flood-opacity="0.35"/></filter>
-    <clipPath id="round"><rect width="1280" height="430" rx="28"/></clipPath>
-    <!-- signal trace: telemetry wiggle on the left, an ECG-style beat on the right -->
-    <path id="sigline" d="M -120 372 C 160 356, 300 392, 460 368 C 560 354, 640 380, 740 370 L 870 370 L 892 370 L 906 338 L 922 398 L 938 358 L 952 370 L 1000 370 C 1120 370, 1260 366, 1420 372" fill="none"/>
-    <path id="cartrack" d="M -120 372 C 160 356, 300 392, 460 368 C 560 354, 640 380, 740 370 L 840 370" fill="none"/>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#15151a"/>
+      <stop offset="100%" stop-color="#0a0a0b"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+    <clipPath id="r"><rect width="1280" height="460" rx="26"/></clipPath>
+    <path id="wave" d="M -60 388 C 160 372, 300 404, 470 386 C 560 376, 620 398, 700 388 L 812 388 L 832 388 L 845 360 L 860 416 L 874 372 L 888 388 L 980 388 C 1120 388, 1240 384, 1360 390" fill="none"/>
+    <path id="cartrack" d="M -60 388 C 160 372, 300 404, 470 386 C 560 376, 620 398, 700 388 L 800 388" fill="none"/>
   </defs>
 
-  <g clip-path="url(#round)">
-    <rect width="1280" height="430" fill="#f4f5f7"/>
+  <g clip-path="url(#r)">
+    <rect width="1280" height="460" fill="url(#fade)"/>
 
-    <!-- drifting pastel field -->
-    <g filter="url(#soft)">
-      <g><circle cx="150" cy="70" r="300" fill="url(#b1)"/><animateTransform attributeName="transform" type="translate" values="0 0; 26 16; -8 22; 0 0" dur="26s" repeatCount="indefinite"/></g>
-      <g><circle cx="1180" cy="60" r="300" fill="url(#b2)"/><animateTransform attributeName="transform" type="translate" values="0 0; -24 18; 10 28; 0 0" dur="30s" repeatCount="indefinite"/></g>
-      <g><circle cx="220" cy="430" r="300" fill="url(#b3)"/><animateTransform attributeName="transform" type="translate" values="0 0; 20 -16; -12 -8; 0 0" dur="28s" repeatCount="indefinite"/></g>
-      <g><circle cx="1120" cy="420" r="300" fill="url(#b4)"/><animateTransform attributeName="transform" type="translate" values="0 0; -18 -14; 8 -22; 0 0" dur="32s" repeatCount="indefinite"/></g>
+    <!-- telemetry grid -->
+    <g stroke="#ffffff" stroke-opacity="0.045">
+      <line x1="160" y1="0" x2="160" y2="460"/><line x1="320" y1="0" x2="320" y2="460"/>
+      <line x1="480" y1="0" x2="480" y2="460"/><line x1="640" y1="0" x2="640" y2="460"/>
+      <line x1="800" y1="0" x2="800" y2="460"/><line x1="960" y1="0" x2="960" y2="460"/>
+      <line x1="1120" y1="0" x2="1120" y2="460"/>
+      <line x1="0" y1="115" x2="1280" y2="115"/><line x1="0" y1="345" x2="1280" y2="345"/>
     </g>
 
-    <!-- the signal: motorsport-red -> blue -> biomed-teal, with a heartbeat -->
-    <use href="#sigline" stroke="url(#sig)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- heartbeat pulse at the biomed end -->
-    <circle cx="1000" cy="370" r="4" fill="#10b981">
-      <animate attributeName="r" values="4;6;4" dur="1.6s" repeatCount="indefinite"/>
-      <animate attributeName="fill-opacity" values="1;0.4;1" dur="1.6s" repeatCount="indefinite"/>
+    <!-- top bar -->
+    <circle cx="46" cy="44" r="5" fill="#ff4326">
+      <animate attributeName="opacity" values="1;.25;1" dur="1.4s" repeatCount="indefinite"/>
+    </circle>
+    <text x="62" y="49" font-size="13" letter-spacing="3" fill="#ff4326" font-weight="bold">LIVE</text>
+    <text x="104" y="49" font-size="13" letter-spacing="3" fill="#8c8c88">TELEMETRY // AKSHOBYA RAO</text>
+    <text x="1234" y="49" font-size="12.5" letter-spacing="2" fill="#8c8c88" text-anchor="end">NAPERVILLE, IL &#183; EST. 2028</text>
+
+    <!-- equalizer / telemetry bars (top right) -->
+    <g fill="#ff4326">
+      <rect x="1040" y="86" width="11" height="40" opacity=".9"><animate attributeName="height" values="40;14;58;26;40" dur="1.5s" repeatCount="indefinite"/></rect>
+      <rect x="1058" y="86" width="11" height="26" opacity=".75"><animate attributeName="height" values="26;54;18;44;26" dur="1.7s" repeatCount="indefinite"/></rect>
+      <rect x="1076" y="86" width="11" height="50" opacity=".9"><animate attributeName="height" values="50;20;60;30;50" dur="1.3s" repeatCount="indefinite"/></rect>
+      <rect x="1094" y="86" width="11" height="18" opacity=".6"><animate attributeName="height" values="18;48;28;58;18" dur="1.9s" repeatCount="indefinite"/></rect>
+      <rect x="1112" y="86" width="11" height="44" opacity=".85"><animate attributeName="height" values="44;16;52;24;44" dur="1.6s" repeatCount="indefinite"/></rect>
+      <rect x="1130" y="86" width="11" height="30" opacity=".7"><animate attributeName="height" values="30;58;20;46;30" dur="1.45s" repeatCount="indefinite"/></rect>
+    </g>
+    <rect x="1040" y="150" width="111" height="2" fill="#ffffff" opacity=".12"/>
+    <text x="1040" y="172" font-size="11" letter-spacing="2" fill="#5b5b58">SIGNAL / NOISE RATIO</text>
+
+    <!-- headline -->
+    <text x="44" y="222" font-size="86" font-weight="bold" letter-spacing="-3" fill="#f3f1ea">I FIND THE <tspan fill="#ff4326">SIGNAL</tspan></text>
+    <text x="44" y="308" font-size="86" font-weight="bold" letter-spacing="-3" fill="#f3f1ea">IN THE NOISE.</text>
+
+    <!-- tagline -->
+    <text x="46" y="348" font-size="15" letter-spacing="1.5" fill="#8c8c88" font-family="ui-monospace,'SF Mono','Roboto Mono',monospace">FUTURE ENGINEER &#160;//&#160; FORMULA 1 &#43; BIOTECH &#160;//&#160; CARS THAT THINK, SENSORS THAT LISTEN</text>
+
+    <!-- signal trace -->
+    <use href="#wave" stroke="url(#sig)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- heartbeat at the right end -->
+    <circle cx="980" cy="388" r="4" fill="#ff7a5c" filter="url(#glow)">
+      <animate attributeName="r" values="4;7;4" dur="1.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;.4;1" dur="1.4s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- F1 car driving the telemetry portion -->
-    <g filter="url(#cardsh)">
+    <!-- F1 car driving the trace -->
+    <g>
       <g transform="translate(-200,0)">
-        <rect x="-42" y="-13" width="7" height="13" rx="1.5" fill="#b00500"/>
-        <path d="M-36 2 L-31 -5 L-10 -9 L8 -11 L26 -8 L44 -4 L44 2 L40 7 L-32 7 Z" fill="#e10600"/>
-        <path d="M-6 -9 a8 8 0 0 1 16 0 Z" fill="#1d1d1f" opacity="0.85"/>
-        <rect x="40" y="0" width="11" height="4" rx="1" fill="#b00500"/>
-        <circle cx="-24" cy="7" r="8" fill="#1d1d1f"/><circle cx="-24" cy="7" r="3.2" fill="#3a3a3a"/>
-        <circle cx="27" cy="7" r="8" fill="#1d1d1f"/><circle cx="27" cy="7" r="3.2" fill="#3a3a3a"/>
+        <rect x="-40" y="-12" width="6" height="12" rx="1.4" fill="#b00500"/>
+        <path d="M-34 2 L-29 -5 L-9 -9 L8 -11 L25 -8 L42 -4 L42 2 L38 7 L-30 7 Z" fill="#ff4326"/>
+        <path d="M-6 -9 a8 8 0 0 1 15 0 Z" fill="#0a0a0b" opacity=".9"/>
+        <rect x="38" y="0" width="10" height="4" rx="1" fill="#b00500"/>
+        <circle cx="-22" cy="7" r="7.5" fill="#0a0a0b"/><circle cx="-22" cy="7" r="3" fill="#3a3a3a"/>
+        <circle cx="26" cy="7" r="7.5" fill="#0a0a0b"/><circle cx="26" cy="7" r="3" fill="#3a3a3a"/>
         <animateMotion dur="9s" repeatCount="indefinite" rotate="auto" calcMode="linear"><mpath href="#cartrack"/></animateMotion>
       </g>
     </g>
-
-    <!-- glass nav pill -->
-    <g filter="url(#glass)"><rect x="455" y="30" width="370" height="46" rx="23" fill="#ffffff" fill-opacity="0.6" stroke="#ffffff" stroke-opacity="0.85"/></g>
-    <circle cx="484" cy="53" r="5" fill="#0a6cff"><animate attributeName="fill-opacity" values="1;0.35;1" dur="2.4s" repeatCount="indefinite"/></circle>
-    <text x="501" y="58" font-size="15" font-weight="600" fill="#1d1d1f">Akshobya Rao</text>
-    <text x="635" y="58" font-size="14" fill="#6e6e73">Projects</text>
-    <rect x="717" y="40" width="92" height="26" rx="13" fill="#0a6cff"/>
-    <text x="763" y="57" font-size="13.5" font-weight="600" fill="#ffffff" text-anchor="middle">Contact</text>
-
-    <!-- eyebrow -->
-    <text x="640" y="176" font-size="17" fill="#6e6e73" text-anchor="middle">Naperville, Illinois  ·  Class of 2028  ·  Engineering</text>
-
-    <!-- headline -->
-    <text x="640" y="262" font-size="64" font-weight="600" letter-spacing="-2" text-anchor="middle"><tspan fill="#1d1d1f">I find the </tspan><tspan fill="#0a6cff">signal</tspan><tspan fill="#1d1d1f"> in the noise.</tspan>
-      <animate attributeName="opacity" values="0;1" dur="0.9s" begin="0.1s" fill="freeze"/>
-    </text>
-
-    <!-- subline -->
-    <text x="640" y="306" font-size="18.5" fill="#56565b" text-anchor="middle"><tspan fill="#c20600" font-weight="600">Cars that think at 200 mph</tspan><tspan>  ·  </tspan><tspan fill="#0a8f63" font-weight="600">sensors that read the body without a needle</tspan></text>
   </g>
 </svg>
