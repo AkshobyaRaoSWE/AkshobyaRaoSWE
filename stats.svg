@@ -7,7 +7,7 @@
     <circle cx="34" cy="36" r="4.5" fill="#ff4326"><animate attributeName="opacity" values="1;.3;1" dur="1.5s" repeatCount="indefinite"/></circle>
     <text x="48" y="40" font-size="12" letter-spacing="2.5" fill="#ff4326">GITHUB TELEMETRY</text>
     <text x="34" y="92" font-size="11" letter-spacing="2" fill="#5b5b58">REPOSITORIES</text>
-    <text x="34" y="128" font-size="34" font-weight="bold" fill="#f3f1ea" font-family="'Helvetica Neue',Arial,sans-serif">24</text>
+    <text x="34" y="128" font-size="34" font-weight="bold" fill="#f3f1ea" font-family="'Helvetica Neue',Arial,sans-serif">25</text>
     <text x="150" y="92" font-size="11" letter-spacing="2" fill="#5b5b58">LANGUAGES</text>
     <text x="150" y="128" font-size="34" font-weight="bold" fill="#f3f1ea" font-family="'Helvetica Neue',Arial,sans-serif">10</text>
     <text x="34" y="170" font-size="11" letter-spacing="2" fill="#5b5b58">STACK</text>
